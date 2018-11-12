@@ -30,7 +30,7 @@ airlines <- tbl(sc, "airlines_bi_pq")
 airlines
 
 airline_counts_by_year <- airlines %>% group_by(year) %>% summarise(count=n()) %>% collect
-airline_counts_by_year %>% tbl_df %>% print(n=nrow(.))
+airline_counts_by_year %>% tbl_df
 
 g <- ggplot(airline_counts_by_year, aes(x=year, y=count))
 g <- g + geom_line(

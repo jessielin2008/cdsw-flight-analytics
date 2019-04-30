@@ -1,4 +1,6 @@
 install.packages("maps")
 install.packages("geosphere")
+install.packages("DBI")
+install.packages("sparklyr")
 library(devtools)
 devtools::install_github("rstudio/sparklyr")

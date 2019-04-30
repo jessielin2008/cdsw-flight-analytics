@@ -12,7 +12,7 @@ library(dplyr)
 ## Configure cluster
 config <- spark_config()
 config$spark.driver.cores   <- 2
-config$spark.executor.cores <- 4
+config$spark.executor.cores <- 1
 config$spark.executor.memory <- "4G"
 
 spark_home <- "/opt/cloudera/parcels/SPARK2/lib/spark2"
